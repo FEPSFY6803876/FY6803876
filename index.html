@@ -4,7 +4,7 @@
     <head> 
        <img src="WebBanner2023.png" alt="Banner" width="1200" height="300">
        <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
-       <h2>Student URN:6803876</h2>
+       <h2>Student URN: 6803876</h2>
        <hr>
        <h2 style=”fontfamily:calibri:”><b>Automation: The Future of The Offshore Oil and Gas Industry</b></h2>
        <hr>
@@ -101,7 +101,7 @@
 
 		
 	A main problem of deepwater drilling has been that it’s more dangerous than shallow water and one 
-	of the most known examples of this is the accident of Deep Horizon (BP) oil spill in the Gulf of 
+	of the most known examples of this is the accident of Deepwater Horizon (BP) oil spill in the Gulf of 
 	Mexico. This was the largest oil spill in the world, killing 11 crew members on the drilling rig and 
 	affecting the livelihoods of thousands of fishermen and destroying much of the marine life at the 
 	time. It was estimated that over 6 million barrels of crude oil were spilled in the Gulf and even after 
@@ -198,7 +198,55 @@
 		
 	</pre>
         </p>
-        
+
+	<hr>
+	    
+        <script>
+	
+  
+    var slideimages = ["Slide1.png", "Slide2.png", "Slide3.png", "Slide4.png", "Slide5.png"];
+    var currentSlide = 0;
+    
+    function showslide() {
+      document.getElementById("slideshow").src = slideimages[currentSlide];
+    }
+    
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slideimage.length;
+      showslide();
+    }
+    
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slideimage.length) % slideimage.length;
+      showslide();
+    }
+    
+    function showSlideNumber(slideNumber) {
+      currentSlide = slideNumber - 1;
+      showslide();
+    }
+    
+    showslide();
+  	
+	</script>
+  <div id="slide-container">
+    <img id="slideshow" src="Slide1.png" alt="Slide 1" style="width:100%; max-width:800px;">
+  
+    <div class="button-container">
+      <button class="button" onclick="prevSlide()">Previous</button>
+      <button class="button" onclick="nextSlide()">Next</button>
+    </div>
+   
+    <div class="slide-number-container">
+      <button class="button" onclick="showSlideNumber(1)">1</button> 
+      <button class="button" onclick="showSlideNumber(2)">2</button> 
+      <button class="button" onclick="showSlideNumber(3)">3 </button> 
+      <button class="button" onclick="showSlideNumber(4)">4</button> 
+      <button class="button" onclick="showSlideNumber(5)">5</button>
+    </div>
+  </div>
+   
+  
 
        
     </body>
